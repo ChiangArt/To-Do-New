@@ -35,23 +35,23 @@ Esto facilita la escalabilidad, el mantenimiento y la colaboración en equipo, y
 src/
 ├── features/
 │   └── tasks/
-│       ├── components/   # Botones, cards, formularios específicos de tareas
-│       ├── hooks/        # useTasks, useTaskForm, etc.
-│       ├── types/        # Interfaces relacionadas con Task (Task, Priority)
+│       ├── components/   
+│       ├── hooks/        
+│       ├── types/        
 │ 
 │     
 │
-├── shared/               # Recursos globales reutilizables
-│   ├── components/       # Botones genéricos, inputs, modales, etc.
-│   ├── hooks/            # useLocalStorage, useDebounce
-│   ├── types/            # Tipos globales
-│   └── utils/            # Funciones helper y validaciones
+├── shared/               
+│   ├── components/      
+│   ├── hooks/            
+│   ├── types/           
+│   └── utils/           
 │
-├── pages/                # Páginas principales de la aplicación
+├── pages/                
 │   ├── TodoHome.tsx
 
-├── App.tsx               # Punto de entrada principal de la aplicación
-└── main.tsx              # Renderizado en el DOM
+├── App.tsx               
+└── main.tsx              
 
 ```
 ##  Instalación y Uso
@@ -63,8 +63,55 @@ git clone https://github.com/aaguilar-igp/BRYAN_CHIANG.git
 
 ```
 
-```bash
-2. Instala las dependencias
-npm install
+### 2. Instala las dependencias
 
-``
+```bash
+npm install o npm i
+
+```
+
+
+### 3. Instala las dependencias
+
+```bash
+npm npm run dev
+
+```
+
+### 4. Abre en tu navegador
+
+[http://localhost:5173](http://localhost:5173)
+
+
+##  Imagenes
+
+### Desktop
+![App](image.png)
+
+
+### Movil
+![alt text](image-1.png)
+
+
+##  Funcionalidades destacadas
+
+- Crear, editar, eliminar y completar tareas
+
+- Prioridades: alto / medio / bajo
+
+- Fecha límite con calendario personalizado
+
+- Etiquetas (tags)
+
+- Validaciones con Yup
+
+- Persistencia en LocalStorage
+
+- UI accesible y responsiva (Tailwind)
+
+
+##  Autor
+
+[Bryan Lee Chiang Arteaga]
+📧 bryan_94tj@hotmail.com
+
