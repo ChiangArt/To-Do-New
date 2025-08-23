@@ -1,4 +1,4 @@
-#  Gestor de Tareas (To-Do App)
+#  Gestor de Tareas (To-Do App)                                                          ![App](/src/assets/React%20Logo.gif)
 
 Aplicación web desarrollada con **React + TypeScript**, que permite gestionar tareas con funcionalidades como:
 
@@ -74,7 +74,7 @@ npm install o npm i
 ### 3. Instala las dependencias
 
 ```bash
-npm npm run dev
+npm run dev
 
 ```
 
@@ -86,11 +86,15 @@ npm npm run dev
 ##  Imagenes
 
 ### Desktop
-![App](image.png)
+![App](/src/assets/image.png)
+
+![App](/src/assets/image-2.png)
 
 
 ### Movil
-![alt text](image-1.png)
+![App](/src/assets/image-1.png)
+
+![App](/src/assets/image-3.png)
 
 
 ##  Funcionalidades destacadas
@@ -113,5 +117,5 @@ npm npm run dev
 ##  Autor
 
 [Bryan Lee Chiang Arteaga]
-📧 bryan_94tj@hotmail.com
+bryan_94tj@hotmail.com
 
