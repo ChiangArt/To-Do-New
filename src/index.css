@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+@theme {
+  --color-primario: #000000;
+  --color-secundario: #1a1a1a;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
