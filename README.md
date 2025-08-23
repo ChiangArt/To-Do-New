@@ -1,4 +1,7 @@
-#  Gestor de Tareas (To-Do App)                                                          ![App](/src/assets/React%20Logo.gif)
+<h1 align="left">
+  Gestor de Tareas (To-Do App)
+  <img src="/src/assets/React%20Logo.gif" alt="App" width="50" style="vertical-align: middle;">
+</h1>
 
 Aplicación web desarrollada con **React + TypeScript**, que permite gestionar tareas con funcionalidades como:
 
