@@ -1,83 +1,30 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Plus } from "lucide-react";
-
-import {  Task } from "../features/tasks/types/interface/TaskInterface";
 import Button from "../shared/components/ui/button/Button";
 import Filters from "../shared/components/ui/filters/Filters";
 import TaskFormModal from "../features/tasks/components/task-form/TaskForm";
 import TaskItems from "../features/tasks/components/task-items/TaskItems";
-import { Priority } from "../features/tasks/types/Types";
-
+import { useTasks } from "../features/tasks/hooks/useTasks";
+import { Task } from "../features/tasks/types/interface/TaskInterface";
 
 export default function TodoHome() {
-  const [tasks, setTasks] = useState<Task[]>(() => {
-    const stored = localStorage.getItem("tasks");
-    return stored ? JSON.parse(stored) : [];
-  });
-
+  const {
+    tasks,
+    addTask,
+    updateTask,
+    toggleComplete,
+    deleteTask,
+    completedCount,
+  } = useTasks();
   const [showForm, setShowForm] = useState(false);
   const [editingTask, setEditingTask] = useState<Task | null>(null);
   const [filter, setFilter] = useState<"all" | "active" | "completed">("all");
-
-  useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
-
-  const addTask = (
-    title: string,
-    description?: string,
-    priority?: Priority,
-    dueDate?: string,
-    tags?: string[]
-  ) => {
-    const newTask: Task = {
-      id: self.crypto.randomUUID(),
-      title,
-      description,
-      completed: false,
-      createdAt: new Date().toLocaleString(),
-      priority,
-      dueDate,
-      tags,
-    };
-    setTasks([newTask, ...tasks]);
-    setShowForm(false);
-  };
-
-  const updateTask = (
-    id: string,
-    title: string,
-    description?: string,
-    priority?: Priority,
-    dueDate?: string,
-    tags?: string[]
-  ) => {
-    setTasks(
-      tasks.map((t) =>
-        t.id === id ? { ...t, title, description, priority, dueDate, tags } : t
-      )
-    );
-    setEditingTask(null);
-    setShowForm(false);
-  };
-
-  const toggleComplete = (id: string) => {
-    setTasks(
-      tasks.map((t) => (t.id === id ? { ...t, completed: !t.completed } : t))
-    );
-  };
-
-  const deleteTask = (id: string) => {
-    setTasks(tasks.filter((t) => t.id !== id));
-  };
 
   const filteredTasks = tasks.filter((task) => {
     if (filter === "active") return !task.completed;
     if (filter === "completed") return task.completed;
     return true;
   });
-
-  const completedCount = tasks.filter((t) => t.completed).length;
 
   return (
     <div className="max-w-3xl mx-auto py-8 px-4">
@@ -129,9 +76,9 @@ export default function TodoHome() {
       <Filters filter={filter} setFilter={setFilter} tasks={tasks} />
 
       <TaskItems
-        tasks={filteredTasks} 
-        toggleComplete={(id) => toggleComplete(id)}
-        deleteTask={(id) => deleteTask(id)}
+        tasks={filteredTasks}
+        toggleComplete={toggleComplete}
+        deleteTask={deleteTask}
         editTask={(task) => {
           setEditingTask(task);
           setShowForm(true);
