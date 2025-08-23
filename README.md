@@ -59,8 +59,7 @@ src/
 ### 1. Clona el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/todo-app.git
-cd todo-app
+git clone https://github.com/aaguilar-igp/BRYAN_CHIANG.git
 
 ```
 
