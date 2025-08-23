@@ -51,7 +51,6 @@ export default function CustomCalendar({
 
   return (
     <div className="absolute z-10 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg p-4 w-64">
-      {/* Navegación de meses */}
       <div className="flex justify-between mb-2">
         <Button variant="primary" onClick={() => navigateMonth(-1)}>
           {"<"}
@@ -66,7 +65,6 @@ export default function CustomCalendar({
         </Button>
       </div>
 
-      {/* Días de la semana */}
       <div className="grid grid-cols-7 gap-1 mb-2">
         {["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sá"].map((d) => (
           <div
@@ -78,7 +76,6 @@ export default function CustomCalendar({
         ))}
       </div>
 
-      {/* Días del mes */}
       <div className="grid grid-cols-7 gap-1">
         {days.map((d) => {
           const isSelected =
@@ -101,7 +98,6 @@ export default function CustomCalendar({
         })}
       </div>
 
-      {/* Acciones de hoy y limpiar */}
       <div className="mt-3 flex justify-between text-xs">
         <Button variant="secondary" onClick={handleSelectToday}>
           Hoy

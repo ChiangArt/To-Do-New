@@ -2,8 +2,6 @@ import Button from "../../../../shared/components/ui/button/Button";
 import { Priority } from "../../types/Types";
 
 
-
-
 interface Props {
   priority: Priority;
   onChange: (p: Priority) => void;
