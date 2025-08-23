@@ -53,6 +53,7 @@ src/
 ├── App.tsx               # Punto de entrada principal de la aplicación
 └── main.tsx              # Renderizado en el DOM
 
+```
 ##  Instalación y Uso
 
 ### 1. Clona el repositorio
@@ -62,3 +63,4 @@ cd todo-app
 
 2. Instala las dependencias
 npm install
+``
