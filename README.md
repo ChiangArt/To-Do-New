@@ -57,10 +57,15 @@ src/
 ##  Instalación y Uso
 
 ### 1. Clona el repositorio
+
 ```bash
 git clone https://github.com/tu-usuario/todo-app.git
 cd todo-app
 
+```
+
+```bash
 2. Instala las dependencias
 npm install
+
 ``
