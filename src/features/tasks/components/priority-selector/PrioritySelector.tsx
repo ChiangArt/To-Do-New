@@ -1,5 +1,5 @@
-import { Priority } from "../../types/interface/TaskInterface";
 import Button from "../../../../shared/components/ui/button/Button";
+import { Priority } from "../../types/Types";
 
 
 

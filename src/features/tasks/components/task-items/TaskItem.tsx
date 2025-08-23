@@ -7,8 +7,9 @@ import {
   Tags,
 } from "lucide-react";
 import confetti from "canvas-confetti";
-import { Priority, Task } from "../../types/interface/TaskInterface";
+import {  Task } from "../../types/interface/TaskInterface";
 import Button from "../../../../shared/components/ui/button/Button";
+import { Priority } from "../../types/Types";
 
 interface TaskItemProps {
   task: Task;

@@ -4,12 +4,13 @@ import PrioritySelector from "../priority-selector/PrioritySelector";
 import TagsInput from "../tags-input/TagsInput";
 import { ErrorMessage, Form, Formik } from "formik";
 import { useState } from "react";
-import { Priority, Task } from "../../types/interface/TaskInterface";
+import {  Task } from "../../types/interface/TaskInterface";
 import Button from "../../../../shared/components/ui/button/Button";
 import { TaskSchema } from "../../schemas/TaskSchema";
 import { TextInput } from "../../../../shared/components/ui/text-input/TextInput";
 import { TextArea } from "../../../../shared/components/ui/text-area/TextArea";
 import CustomCalendar from "../../../../utility/CustomCalendar";
+import { Priority } from "../../types/Types";
 
 
 interface TaskFormProps {

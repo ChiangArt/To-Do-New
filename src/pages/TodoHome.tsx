@@ -81,13 +81,11 @@ export default function TodoHome() {
 
   return (
     <div className="max-w-3xl mx-auto py-8 px-4">
-      {/* Header */}
       <div className="text-center mb-6">
         <h1 className="text-4xl font-bold text-gray-800 mb-2">Todo List</h1>
         <p className="text-gray-600">Organiza tu vida, una tarea a tiempo</p>
       </div>
 
-      {/* Progreso */}
       <div className="bg-white shadow rounded-lg p-4 mb-6">
         <div className="flex justify-between items-center mb-2">
           <h2 className="font-semibold text-gray-700">Progreso</h2>
@@ -107,7 +105,6 @@ export default function TodoHome() {
         </div>
       </div>
 
-      {/* Botón agregar */}
       <div className="flex justify-center mb-4">
         <Button
           onClick={() => {
@@ -119,7 +116,6 @@ export default function TodoHome() {
         </Button>
       </div>
 
-      {/* Formulario */}
       {showForm && (
         <TaskFormModal
           show={showForm}
@@ -130,10 +126,8 @@ export default function TodoHome() {
         />
       )}
 
-      {/* Filtros */}
       <Filters filter={filter} setFilter={setFilter} tasks={tasks} />
 
-      {/* Lista de tareas */}
       <TaskItems
         tasks={filteredTasks} 
         toggleComplete={(id) => toggleComplete(id)}
