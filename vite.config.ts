@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [tailwindcss(), react()],
-  base: "/To-Do-New/"
+  plugins: [react(), tailwindcss()],
+  base: "/To-Do-New/", 
 });
