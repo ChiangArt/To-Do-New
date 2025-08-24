@@ -1,5 +1,5 @@
 import * as Yup from "yup";
-import { Priority } from "../types/interface/TaskInterface";
+import { Priority } from "../types/Types";
 
 export const TaskSchema = Yup.object().shape({
   title: Yup.string()
