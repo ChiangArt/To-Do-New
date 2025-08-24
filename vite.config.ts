@@ -4,5 +4,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [tailwindcss(), react()],
-  base: "https://ChiangArt.github.io/To-Do-New",
+  base: "/To-Do-New/",
 });
