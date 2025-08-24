@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "http:/ChiangArt.github.io/To-Do-New",
+
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
